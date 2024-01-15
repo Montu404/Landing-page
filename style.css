@@ -1,17 +1,21 @@
 body {
     display: flex;
     flex-direction: column;
-    font-family: helvetica;
-    background-color: rgb(40, 66, 55);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 html {
     display: flex;
     flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
+    margin-top: 0px;
+    margin-left: 0px;
 }
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
 
 a {
     color: whitesmoke;
@@ -22,11 +26,36 @@ li {
     list-style-type: none;
 }
 
+.section-1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 78%;
+    background-color: rgb(40, 66, 55);
+    padding-left: 11%;
+    padding-right: 11%;
+}
+
+.right-links a:hover {
+    color: rgb(28, 94, 124);
+}
+
+.sign-up1:hover {
+    background-color: rgb(28, 94, 124);
+    cursor: pointer;
+}
+
+
 .sign-up1 {
     background-color: #3f9983;
     border: 0;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 10px;
+    color: white;
+    transition-property: all;
+    transition-duration: 500ms;
+    transition-delay: 0ms;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 
@@ -44,6 +73,14 @@ li {
     width: 100%;
 }
 
+.section-1 div {
+    color: rgb(226, 226, 207);
+}
+
+.right-links a {
+    color: rgb(226, 226, 207);
+}
+
 .right-links {
     display: flex;
     flex-direction: row;
@@ -52,30 +89,267 @@ li {
 }
 
 .hero-main {
-    font-size: xx-large;
+    font-size: 40px;
     color: whitesmoke;
     font-weight: bold;
 }
 
 .hero-subtext {
     color: whitesmoke;
-    font-size: medium;
+    font-size: 19px;
 }
 
 .top-info-left {
     display: flex;
     flex-direction: column;
     flex: 1;
-}
-
-.section-1 {
-    height: 1000px;
-    display: flex;
-    flex-direction: column;
+    max-width: 800px;
 }
 
 .top-info {
     display: flex;
-    justify-content: end;
+    flex-direction: row;
+    align-items: center;
+    gap: 120px;
+}
+
+.top-pic {
+    display: flex;
+    flex: 1;
+}
+
+.top-pic img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+    border: 0;
+    border-radius: 15px;
+    min-width: 200px;
+}
+
+.section-1 {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-info-left .hero-subtext {
+    max-width: 475px;
+    margin-top: 20px;
+}
+
+.top-info {
+    margin-top: 90px;
+}
+
+.sign-up-button {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+
+
+.section-2 {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    background-color: rgb(172, 197, 193);
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 78%;
+    padding-left: 11%;
+    padding-right: 11%;
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+    padding-top: 10px;
+}
+
+.section2-header {
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    color: #276656;
+    margin-top: -5px;
+}
+
+.component-pics {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.component-pics img {
+    display: flex;
+    max-height: 170px;
+    max-width: 170px;
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+    border: solid rgb(28, 94, 124) 5px;
+    border-style: groove;
+    border-radius: 15px;
+    min-width: 85px;
+}
+
+.component-pics p {
+    max-width: 170px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.section-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 78%;
+    padding-left: 11%;
+    padding-right: 11%;
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+    background-color: darkslategrey;
+}
+
+.section-3 .text {
+    color: lightgray;
+    font-size: 27px;
+    font-style: italic;
+}
+
+.text {
+    display: block;
+    text-align: center;
+    
+}
+
+.person {
+    color: lightgray;
+    font-size: 19px;
+    font-weight: bold;
+    display: flex;
+    justify-content: right;
+}
+
+
+#text-box {
+    max-width: 850px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.section-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 78%;
+    padding-left: 11%;
+    padding-right: 11%;
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+    background-color: rgb(178, 193, 207);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.pop-up {
+    background-color: rgb(115, 146, 185);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    max-width: 780px;
     width: 100%;
+}
+
+.popup-text {
+    display: flex;
+    flex-direction: column;
+    color: lightgray;
+    flex: 1;
+    justify-content: center;
+}
+
+.sign-up-button2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-up2 {
+    border-radius: 10px;
+    border: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 45px;
+    padding-right: 45px;
+    width: 100%;
+    height: auto;
+    max-height: fit-content;
+    display: flex;
+    transition-property: all;
+    transition-duration: 500ms;
+    transition-delay: 0ms;
+    background-color: rgb(102, 209, 228);
+    flex: 1;
+    margin-right: 20px
+}
+
+.sign-up2:hover {
+    background-color: rgb(51, 82, 97);
+    cursor: pointer;
+}
+
+.popup-header {
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.subtext {
+    font-size: 16px;
+    margin-bottom: 30px;
+    margin-top: -15px;
+    margin-left: 10px;
+}
+
+
+.section-5 {
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 78%;
+    padding-left: 11%;
+    padding-right: 11%;
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+    background-color: rgb(39, 35, 51);
+    color: lightgray;
+    font-weight: bold;
+    text-align: center;
 }
